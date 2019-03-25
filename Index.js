@@ -4,7 +4,7 @@ const port = '3000';
 
 const server = http.createServer((req,res) => {
    console.log(req.headers) ;
-   res.statusCode = '200';
+   res.statusCode = '401';
    res.setHeader('content-Type','text/html' );
    res.end('<html><head></head><body><h1>This is my First server</h1></body></html>');
 });
